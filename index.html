@@ -98,7 +98,7 @@ text-shadow:0 0 30px red;
 
 <p>A little surprise is waiting for you...</p>
 
-<button onclick="alert('Part 2 Coming ❤️')">
+<button onclick="openSurprise()">
 Open Surprise
 </button>
 
@@ -132,7 +132,31 @@ h.remove();
 
 setInterval(heart,250);
 
+  function openSurprise() {
+    let pass = prompt("🔒 Enter Passcode");
+
+    if (pass === "2204") {
+        window.location.href = "surprise.html";
+    } else {
+        alert("❌ Wrong Passcode! Try Again.");
+    }
+}
+  function openSurprise() {
+    let pass = prompt("🔒 Enter Passcode");
+
+    if (pass === "2204") {
+        window.location.href = "surprise.html";
+    } else {
+        alert("❌ Wrong Passcode! Try Again.");
+    }
+}
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
